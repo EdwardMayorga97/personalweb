@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Currículum de Edward Farid Mayorga Hernandez, Ingeniero de Sistemas y Tecnólogo en Electrónica Industrial.">
+  <meta name="keywords" content="curriculum, portafolio, tecnología, desarrollo web, ingeniería de sistemas">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Currículum - Edward Farid Mayorga Hernandez">
+  <meta property="og:description" content="Currículum de Edward Farid Mayorga Hernandez, Ingeniero de Sistemas y Tecnólogo en Electrónica Industrial.">
+  <meta property="og:image" content="perfil.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="foto-perfil.png" type="image/png">
+  <title>Currículum - Edward Farid Mayorga Hernandez</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Botón "Back to Top" -->
+  <button id="backToTop" title="Volver arriba" aria-label="Volver arriba"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Header y Navegación -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">Edward Farid</a>
+        <button class="mobile-menu" id="mobile-menu" aria-label="Abrir menú" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item"><a href="#home" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Proyectos</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">Acerca de</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Habilidades</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experiencia</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Educación</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección Hero -->
+    <section id="home" class="hero-section">
+      <div class="hero-overlay"></div>
+      <canvas id="particles-canvas"></canvas>
+      <button id="toggleParticles" aria-label="Toggle Particle Effects"><i class="fas fa-toggle-on"></i></button>
+      <div class="hero-content">
+        <!-- Foto de perfil y presentación -->
+        <img src="foto-perfil.png" alt="Retrato de Edward Farid Mayorga Hernandez" class="profile-picture">
+        <h1>Yo soy <span style="color: var(--primary-color);">Edward Mayorga</span></h1>
+        <!-- Elemento para efecto typewriter que muestra las habilidades -->
+        <h2 id="typed-skills"></h2>
+        <!-- Texto de disponibilidad con estilo especial -->
+        <p class="availability">Disponible para trabajar</p><br>
+        <!-- Flecha para bajar a la siguiente sección -->
+        <a href="#projects" class="down-arrow" aria-label="Ir a Proyectos"><i class="fas fa-chevron-down"></i></a>
+      </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2>Proyectos Destacados</h2>
+        <div class="projects-container">
+          <div class="project-item">
+            <h3>Disedmed.com</h3>
+            <div class="project-preview">
+              <iframe src="https://disedmed.com" title="Vista previa de Disedmed.com" loading="lazy"></iframe>
+            </div>
+            <p>
+              Desarrollé y lideré la creación del área tecnológica para Disedmed SAS, creando su plataforma digital y mejorando la eficiencia operativa.
+            </p>
+            <!-- Tecnologías utilizadas -->
+            <div class="tech-used">
+              <span class="html-icon" title="HTML"><i class="fab fa-html5"></i> HTML</span>
+              <span class="css-icon" title="CSS"><i class="fab fa-css3-alt"></i> CSS</span>
+              <span class="js-icon" title="JavaScript"><i class="fab fa-js"></i> JavaScript</span>
+              <span class="php-icon" title="PHP"><i class="fab fa-php"></i> PHP</span>
+              <span class="mysql-icon" title="MySQL"><i class="fas fa-database"></i> MySQL</span>
+            </div>
+            <a href="https://disedmed.com" target="_blank" class="btn project-btn">Ver Proyecto</a>
+          </div>
+          <div class="project-item">
+            <h3>EasyCarsUS.com</h3>
+            <div class="project-preview">
+              <iframe src="https://easycarsus.com" title="Vista previa de EasyCarsUS.com" loading="lazy"></iframe>
+            </div>
+            <p>
+              Implementé la solución digital para EasyCarsUS, fundando su área tecnológica y creando una plataforma de servicios innovadora.
+            </p>
+            <!-- Tecnologías utilizadas -->
+            <div class="tech-used">
+              <span class="html-icon" title="HTML"><i class="fab fa-html5"></i> HTML</span>
+              <span class="css-icon" title="CSS"><i class="fab fa-css3-alt"></i> CSS</span>
+              <span class="js-icon" title="JavaScript"><i class="fab fa-js"></i> JavaScript</span>
+              <span class="php-icon" title="PHP"><i class="fab fa-php"></i> PHP</span>
+              <span class="mysql-icon" title="MySQL"><i class="fas fa-database"></i> MySQL</span>
+            </div>
+            <a href="https://easycarsus.com" target="_blank" class="btn project-btn">Ver Proyecto</a>
+          </div>
+        </div>
+      </div>
+      <!-- Down Arrow to Next Section -->
+      <a href="#about" class="down-arrow" aria-label="Ir a Acerca de mí">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+    
+    <!-- Sección Acerca de mí -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2>Acerca de mí</h2>
+        <p>
+          Soy un apasionado de la tecnología con amplia experiencia en desarrollo web y sistemas. He trabajado como desarrollador en empresas que inicialmente no contaban con un área tecnológica, ¡yo las inicié! Mi formación como Tecnólogo en Electrónica Industrial, Ingeniero de Sistemas Informáticos y Técnico en Contabilidad me permite abordar proyectos con una visión integral, combinando la parte técnica con una sólida base contable.
+        </p>
+        <!-- Slider de fotos sutil y futurista -->
+        <div class="photo-slider">
+          <div class="slides">
+            <div class="slide"><img src="foto1.png" alt="Foto 1"></div>
+            <div class="slide"><img src="foto2.png" alt="Foto 2"></div>
+            <div class="slide"><img src="foto3.png" alt="Foto 3"></div>
+            <div class="slide"><img src="foto4.png" alt="Foto 4"></div>
+            <div class="slide"><img src="foto5.png" alt="Foto 5"></div>
+            <div class="slide"><img src="foto6.png" alt="Foto 6"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Down Arrow to Next Section -->
+      <a href="#skills" class="down-arrow" aria-label="Ir a Habilidades">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+    
+    <!-- Sección Habilidades (sin barras de progreso) -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <h2>Habilidades</h2>
+        <!-- Desarrollo Web -->
+        <div class="skills-group desarrollo">
+          <h3>Desarrollo Web</h3>
+          <div class="skills-container">
+            <div class="skill-item">
+              <span class="tech-icon html-icon"><i class="fab fa-html5"></i></span>
+              <h4>HTML</h4>
+            </div>
+            <div class="skill-item">
+              <span class="tech-icon css-icon"><i class="fab fa-css3-alt"></i></span>
+              <h4>CSS</h4>
+            </div>
+            <div class="skill-item">
+              <span class="tech-icon js-icon"><i class="fab fa-js"></i></span>
+              <h4>JavaScript</h4>
+            </div>
+            <div class="skill-item">
+              <span class="tech-icon php-icon"><i class="fab fa-php"></i></span>
+              <h4>PHP</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Bases de Datos -->
+        <div class="skills-group bases">
+          <h3>Bases de Datos</h3>
+          <div class="skills-container">
+            <div class="skill-item">
+              <span class="tech-icon mysql-icon"><i class="fas fa-database"></i></span>
+              <h4>MySQL</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Lenguajes de Programación -->
+        <div class="skills-group lenguajes">
+          <h3>Lenguajes de Programación</h3>
+          <div class="skills-container">
+            <div class="skill-item">
+              <span class="tech-icon"><i class="fab fa-microsoft"></i></span>
+              <h4>C#</h4>
+            </div>
+            <div class="skill-item">
+              <span class="tech-icon"><i class="fas fa-code"></i></span>
+              <h4>C++</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Diseño y Multimedia -->
+        <div class="skills-group diseno">
+          <h3>Diseño y Multimedia</h3>
+          <div class="skills-container">
+            <div class="skill-item">
+              <span class="tech-icon"><i class="fab fa-blender"></i></span>
+              <h4>Blender</h4>
+            </div>
+            <div class="skill-item">
+              <span class="tech-icon"><i class="fab fa-unity"></i></span>
+              <h4>Unity 3D</h4>
+            </div>
+            <div class="skill-item">
+              <span class="tech-icon"><i class="fas fa-pencil-alt"></i></span>
+              <h4>Corel Draw</h4>
+            </div>
+            <div class="skill-item">
+              <!-- Reemplazamos el ícono de Photoshop por un span -->
+              <span class="tech-icon photoshop-icon" title="Photoshop">PS</span>
+              <h4>Photoshop</h4>
+            </div>
+            <div class="skill-item">
+              <span class="tech-icon"><i class="fas fa-video"></i></span>
+              <h4>Edición de Videos</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Frameworks y Herramientas -->
+        <div class="skills-group frameworks">
+          <h3>Frameworks y Herramientas</h3>
+          <div class="skills-container">
+            <div class="skill-item">
+              <span class="tech-icon"><i class="fas fa-code"></i></span>
+              <h4>CodeIgniter</h4>
+            </div>
+            <div class="skill-item">
+              <span class="tech-icon"><i class="fab fa-bootstrap"></i></span>
+              <h4>Bootstrap</h4>
+            </div>
+            <div class="skill-item">
+              <span class="tech-icon"><i class="fas fa-robot"></i></span>
+              <h4>OpenAI</h4>
+            </div>
+            <div class="skill-item">
+              <span class="tech-icon"><i class="fas fa-file-alt"></i></span>
+              <h4>Office</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Habilidades Blandas -->
+        <div class="skills-group blandas">
+          <h3>Habilidades Blandas</h3>
+          <div class="skills-container">
+            <div class="skill-item">
+              <span class="tech-icon"><i class="fas fa-users"></i></span>
+              <h4>Trabajo en Equipo</h4>
+            </div>
+            <div class="skill-item">
+              <span class="tech-icon"><i class="fas fa-lightbulb"></i></span>
+              <h4>Resolutivo</h4>
+            </div>
+            <div class="skill-item">
+              <span class="tech-icon"><i class="fas fa-hourglass-half"></i></span>
+              <h4>Trabajo Bajo Presión</h4>
+            </div>
+            <div class="skill-item">
+              <span class="tech-icon"><i class="fas fa-comments"></i></span>
+              <h4>Comunicación Efectiva</h4>
+            </div>
+            <div class="skill-item">
+              <span class="tech-icon"><i class="fas fa-chess-king"></i></span>
+              <h4>Liderazgo</h4>
+            </div>
+            <div class="skill-item">
+              <span class="tech-icon"><i class="fas fa-brain"></i></span>
+              <h4>Creatividad</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Down Arrow to Next Section -->
+      <a href="#experience" class="down-arrow" aria-label="Ir a Experiencia">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+    
+    <!-- Sección Experiencia -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <h2>Experiencia Profesional</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Disedmed SAS</h3>
+            <p>
+              Desarrollador responsable de crear el área tecnológica en la empresa. Implementé soluciones digitales y sistemas desde cero, marcando la pauta en la transformación tecnológica.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h3>Acualago Parque</h3>
+            <p>
+              Implementé la solución digital en la empresa, creando el área tecnológica y optimizando procesos internos.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h3>Cohoriente</h3>
+            <p>
+              Desarrollé plataformas y sistemas que impulsaron la eficiencia operativa, creando y liderando el área de tecnología.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Down Arrow to Next Section -->
+      <a href="#education" class="down-arrow" aria-label="Ir a Educación">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+    
+    <!-- Sección Educación -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <h2>Educación</h2>
+        <div class="education-list">
+          <div class="education-item">
+            <h3>Tecnólogo en Electrónica Industrial</h3>
+            <p>Institución: Unidades Tecnológicas de Santander, Colombia</p>
+          </div>
+          <div class="education-item">
+            <h3>Ingeniero de Sistemas Informáticos</h3>
+            <p>Institución: Uniciencias, Santander, Colombia</p>
+          </div>
+          <div class="education-item">
+            <h3>Bachillerato Técnico en Contabilidad</h3>
+            <p>Institución: Luis Carlos Galán Piedecuesta, Colombia</p>
+          </div>
+        </div>
+      </div>
+      <!-- Down Arrow to Next Section -->
+      <a href="#contact" class="down-arrow" aria-label="Ir a Contacto">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+    
+    <!-- Sección Contacto -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2>Contacto</h2>
+        <p>
+          Para contactarme, envía un correo a 
+          <a href="mailto:edwardmayorga97@gmail.com">edwardmayorga97@gmail.com</a> 
+          o sígueme en mis redes:
+        </p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3B0WKFGc7ZQaK0GEj9MTUb%2FA%3D%3D" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/EdwardMayorga97" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Edward Farid Mayorga Hernandez. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
